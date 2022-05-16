@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var Country_1 = require("./Country");
+var Sort_1 = require("./Sort");
+var bxh = new Sort_1.Sort();
+var vn = new Country_1.Country('vn', 7, 6, 5);
+var thai = new Country_1.Country('thai', 6, 4, 3);
+var lao = new Country_1.Country('lao', 6, 5, 3);
+var sing = new Country_1.Country('sing', 6, 4, 12);
+bxh.add(vn);
+bxh.add(thai);
+bxh.add(lao);
+bxh.add(sing);
+bxh.bubbleSort();
+console.log(Sort_1.Sort.list);
